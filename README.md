@@ -155,7 +155,10 @@ For this project, we'll also need the following libraries:
 
  To install them, click on the `Sketch -> Include Library -> Manage Libraries`. Search for each library using the box in the upper-right to filter your search, click on the found library, and click the "Install" button.
 
-The Adafruit Sensor library is also needed. This can be downloaded [here](https://github.com/adafruit/Adafruit_Sensor). Instructions for manually installing a library can be found [here](https://www.arduino.cc/en/Guide/Libraries).
+The Adafruit Sensor library is also needed. This can be downloaded [here](https://github.com/adafruit/Adafruit_DHT_Unified). Instructions for manually installing a library can be found [here](https://www.arduino.cc/en/Guide/Libraries).
+
+Lastly we will also need the latest ESP8266 Arduino library
+- Visit https://github.com/esp8266/Arduino and follow the instructions for "Installing with Boards Manager"
 
 ## 1.7 Modify the Remote Monitoring sample
 
@@ -539,6 +542,11 @@ For this project, we'll also need the the following libraries:
  - AzureIoTHub
 
  To install them, click on the `Sketch -> Include Library -> Manage Libraries`. Search for each library using the box in the upper-right to filter your search, click on the found library, and click the "Install" button.
+
+The Adafruit Sensor library is also needed. This can be downloaded [here](https://github.com/adafruit/Adafruit_DHT_Unified). Instructions for manually installing a library can be found [here](https://www.arduino.cc/en/Guide/Libraries).
+
+Lastly we will also need the latest ESP8266 Arduino library
+- Visit https://github.com/esp8266/Arduino and follow the instructions for "Installing with Boards Manager"
 
 ## 2.11 Modify the Command Center sample
 
