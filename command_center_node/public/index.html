@@ -112,14 +112,19 @@
                     $http.post('/api/command/', {command: value});    
                 };
             
-                $http.get('/api/alerts').success(function(data) {
+                $http.get('/api/alerts').then(function(response) {
+
+                    var data = response.data;
+
                     $scope.latest_alerts = data.reverse(); 
                 });
             
-                $http.get('/api/temperatures').success(function(result) {
+                $http.get('/api/temperatures').then(function(response) {
+
+                    var data = response.data;
                     
-                    if(result.length > 0) {
-                        angular.forEach(result, function(x) {
+                    if(data.length > 0) {
+                        angular.forEach(data, function(x) {
 
                             var utcSeconds = x.eventtime._;
                             var d = new Date(0);
